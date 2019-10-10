@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dimen_8dp">
+
+    <com.robertlevonyan.views.chip.Chip
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/chip"
+            app:mcv_chipText=""
+            app:mcv_backgroundColor="@color/colorRed1"
+            app:mcv_textColor="@color/colorWhite">
+
+    </com.robertlevonyan.views.chip.Chip>
+
+</RelativeLayout>

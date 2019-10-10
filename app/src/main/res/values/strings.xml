@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Pokemon Pokedex</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="pokedex_gen_1">Pokemon List</string>
+    <string name="height">Height</string>
+    <string name="weight">Weight</string>
+    <string name="type">Type</string>
+    <string name="weakness">Weakness</string>
+    <string name="pre_evolution">Previous Evolution</string>
+    <string name="next_evolution">Next Evolution</string>
+    <string name="height_of_pokemon">Height:</string>
+    <string name="weight_of_pokemon">Weight:</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

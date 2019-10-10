@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorDark"
+        tools:context=".PokemonDetail">
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+       <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/pokemon_card_view"
+            android:layout_marginStart="@dimen/dimen_16dp"
+            android:layout_marginEnd="@dimen/dimen_16dp"
+            android:layout_marginTop="@dimen/dimen_50dp"
+            app:cardElevation="0dp"
+            app:cardCornerRadius="@dimen/dimen_8dp"
+            app:cardBackgroundColor="@color/colorWhite">
+
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical"
+              android:gravity="center_horizontal"
+              android:padding="@dimen/dimen_16dp"
+              android:layout_marginTop="@dimen/dimen_80dp">
+
+             <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/name"
+                android:text=""
+                android:textSize="@dimen/dimen_30sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorRed1"/>
+
+              <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/height"
+                android:layout_marginBottom="@dimen/dimen_10dp"
+                android:text="@string/height"
+                android:textSize="@dimen/dimen_18sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorRed2"/>
+
+              <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/weight"
+                android:layout_marginBottom="@dimen/dimen_10dp"
+                android:text="@string/weight"
+                android:textSize="@dimen/dimen_18sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorRed2"/>
+
+              <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dimen_10dp"
+                android:text="@string/type"
+                android:textSize="@dimen/dimen_18sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorDark"/>
+
+              <android.support.v7.widget.RecyclerView
+                      android:layout_width="match_parent"
+                      android:layout_height="@dimen/dimen_40dp"
+                      android:id="@+id/recycler_type"
+                      android:layout_marginBottom="@dimen/dimen_10dp">
+
+              </android.support.v7.widget.RecyclerView>
+
+              <TextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_marginBottom="@dimen/dimen_10dp"
+                      android:text="@string/weakness"
+                      android:textSize="@dimen/dimen_18sp"
+                      android:textStyle="bold"
+                      android:textColor="@color/colorDark"/>
+
+              <android.support.v7.widget.RecyclerView
+                      android:layout_width="match_parent"
+                      android:layout_height="@dimen/dimen_40dp"
+                      android:id="@+id/recycler_weakness">
+
+              </android.support.v7.widget.RecyclerView>
+
+              <TextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_marginBottom="@dimen/dimen_10dp"
+                      android:text="@string/pre_evolution"
+                      android:textSize="@dimen/dimen_18sp"
+                      android:textStyle="bold"
+                      android:textColor="@color/colorDark"/>
+
+              <android.support.v7.widget.RecyclerView
+                      android:layout_width="match_parent"
+                      android:layout_height="@dimen/dimen_40dp"
+                      android:id="@+id/recycler_prev_evolution">
+
+              </android.support.v7.widget.RecyclerView>
+
+              <TextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_marginBottom="@dimen/dimen_10dp"
+                      android:text="@string/next_evolution"
+                      android:textSize="@dimen/dimen_18sp"
+                      android:textStyle="bold"
+                      android:textColor="@color/colorDark"/>
+
+              <android.support.v7.widget.RecyclerView
+                      android:layout_width="match_parent"
+                      android:layout_height="@dimen/dimen_40dp"
+                      android:id="@+id/recycler_next_evolution">
+
+              </android.support.v7.widget.RecyclerView>
+
+          </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <ImageView
+            android:layout_width="@dimen/dimen_150dp"
+            android:layout_height="@dimen/dimen_150dp"
+            android:id="@+id/pokemon_image"
+            android:layout_marginTop="@dimen/dimen_negative_50dp"
+            android:layout_alignTop="@+id/pokemon_card_view"
+            android:src="@mipmap/ic_launcher"
+            android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>
